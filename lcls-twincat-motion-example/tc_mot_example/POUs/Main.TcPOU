@@ -7,7 +7,7 @@ VAR
     {attribute 'pytmc' := '
         pv: PLC:TST:PASS0
     '}
-    fAutoPass0: BOOL;
+    fAutoPass0: LREAL;
 
     // Floating point setting, pass1 autosave
     {attribute 'pytmc' := '
