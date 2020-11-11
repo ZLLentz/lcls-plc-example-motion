@@ -15,7 +15,7 @@ VAR
         autosave_pass1: VAL
     '}
     fAutoPass1: LREAL;
-    
+
     // Simulated motor that is always allowed to move
     {attribute 'pytmc' := '
         pv: PLC:TST:MOT:SIM:01
