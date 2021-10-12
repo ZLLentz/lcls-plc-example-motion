@@ -44,6 +44,18 @@ VAR
     fbArbiter: FB_Arbiter(1);
     {attribute 'pytmc' := 'pv: PLC:TST:MOT:FFO:01'}
     fbFFHWO: FB_HardwareFFOutput := (bAutoReset := TRUE);
+    
+    // Cycle exceed testing
+    bCauseExceed: BOOL;
+    nDuration: UDINT := 2000000;
+    nCounter: UDINT;
+    nIndex: UDINT;
+    
+    fbADSREAD: ADSREAD;
+    bRead: BOOL;
+    nExceedCount: UDINT;
+    
+    fbCauseError: FB_CauseNCError;
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[fbMotion1(stMotionStage := M1);
@@ -90,10 +102,28 @@ fbPPM(
     fbFFHWO:=fbFFHWO,
     );
     
+fbFFHWO.i_sNetID := '172.21.42.126.1.1';
 fbFFHWO.Execute();
 fbArbiterIO(
     Arbiter:=fbArbiter,
-    fbFFHWO:=fbFFHWO);]]></ST>
+    fbFFHWO:=fbFFHWO);
+
+IF bCauseExceed THEN
+    FOR nIndex := 1 TO nDuration DO
+        nCounter := nCounter + 1;
+	END_FOR
+END_IF
+
+fbADSREAD(
+    NETID:='',
+    PORT:=350,
+    IDXGRP:=16#F200,
+    IDXOFFS:=16#100,
+    LEN:=SIZEOF(nExceedCount),
+    DESTADDR:=ADR(nExceedCount),
+    READ:=bRead);
+    
+fbCauseError(Axis:=M2.Axis);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
