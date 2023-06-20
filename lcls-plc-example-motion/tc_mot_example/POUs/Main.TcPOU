@@ -3,6 +3,12 @@
   <POU Name="Main" Id="{7b41e58a-08f0-4959-90b4-af08ef5cbf10}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM Main
 VAR
+    // See how pytmc update reacts to pragma on AMDNETID
+    {attribute 'pytmc' := '
+        pv: @(PREFIX):NETID_TEST
+    '}
+    netID: AMSNETID;
+
     // Simulated motor that is always allowed to move
     {attribute 'pytmc' := '
         pv: @(PREFIX)01
