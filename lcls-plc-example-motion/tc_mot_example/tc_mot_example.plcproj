@@ -27,7 +27,13 @@
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="PlcTask2.TcTTO">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\Main.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\Main2.TcPOU">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -79,16 +85,16 @@
   </ItemGroup>
   <ItemGroup>
     <PlaceholderResolution Include="LCLS General">
-      <Resolution>LCLS General, 2.9.1 (SLAC)</Resolution>
+      <Resolution>LCLS General, 2.10.0 (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="lcls-twincat-common-components">
-      <Resolution>lcls-twincat-common-components, 3.0.1 (SLAC)</Resolution>
+      <Resolution>lcls-twincat-common-components, 3.4.0 (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="lcls-twincat-motion">
-      <Resolution>lcls-twincat-motion, 4.0.2 (SLAC)</Resolution>
+      <Resolution>lcls-twincat-motion, 4.0.9 (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="PMPS">
-      <Resolution>PMPS, 3.0.14 (SLAC - LCLS)</Resolution>
+      <Resolution>PMPS, 3.2.1 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
   </ItemGroup>
   <ItemGroup>

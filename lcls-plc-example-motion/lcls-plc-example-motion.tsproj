@@ -1,10 +1,19 @@
 <?xml version="1.0"?>
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.35" TcVersionFixed="true">
-	<Project ProjectGUID="{F8B30057-EC89-40A8-9A36-8FCF329C20AB}" TargetNetId="172.21.148.148.1.1" ShowHideConfigurations="#x3c6">
+	<Project ProjectGUID="{F8B30057-EC89-40A8-9A36-8FCF329C20AB}" TargetNetId="172.21.148.81.1.1" Target64Bit="true" ShowHideConfigurations="#x3c6">
 		<System>
+			<Settings MaxCpus="4">
+				<Cpu/>
+				<Cpu CpuId="1"/>
+				<Cpu CpuId="2"/>
+				<IoIdleTask Affinity="#x00000002"/>
+			</Settings>
 			<Tasks>
-				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
+				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" Affinity="#x00000004" AdtTasks="true">
 					<Name>PlcTask</Name>
+				</Task>
+				<Task Id="6" Priority="21" CycleTime="100000" AmsPort="351" Affinity="#x00000004" AdtTasks="true">
+					<Name>PlcTask2</Name>
 				</Task>
 			</Tasks>
 		</System>
@@ -13,6 +22,7 @@
 		</Motion>
 		<Plc>
 			<Project File="tc_mot_example.xti"/>
+			<PlcAuxTask Affinity="#x00000002"/>
 		</Plc>
 		<Io/>
 	</Project>
