@@ -1033,7 +1033,7 @@ External Setpoint Generation:
 		</DataType>
 	</DataTypes>
 	<Project GUID="{CA7AC114-7F2F-41DD-9644-D0667BBB7DBD}" Name="tc_mot_example" PrjFilePath="..\..\tc_mot_example\tc_mot_example.plcproj" TmcFilePath="..\..\tc_mot_example\tc_mot_example.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="tc_mot_example\tc_mot_example.tmc" TmcHash="{37BDFC2E-0045-C5E9-D74A-02B2DAB45247}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="tc_mot_example\tc_mot_example.tmc" TmcHash="{F3C09D58-0A14-58C6-47B7-0675853566F1}">
 			<Name>tc_mot_example Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
@@ -2118,7 +2118,7 @@ External Setpoint Generation:
 						<OTCID>#x02010060</OTCID>
 					</ManualConfig>
 					<Priority>21</Priority>
-					<CycleTime>10000000</CycleTime>
+					<CycleTime>20000000</CycleTime>
 				</Context>
 			</Contexts>
 			<TaskPouOids>

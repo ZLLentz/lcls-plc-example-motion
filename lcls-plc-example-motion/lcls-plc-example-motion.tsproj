@@ -12,7 +12,7 @@
 				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" Affinity="#x00000004" AdtTasks="true">
 					<Name>PlcTask</Name>
 				</Task>
-				<Task Id="6" Priority="21" CycleTime="100000" AmsPort="351" Affinity="#x00000004" AdtTasks="true">
+				<Task Id="6" Priority="21" CycleTime="200000" AmsPort="351" Affinity="#x00000004" AdtTasks="true">
 					<Name>PlcTask2</Name>
 				</Task>
 			</Tasks>

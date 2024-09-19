@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{37BDFC2E-0045-C5E9-D74A-02B2DAB45247}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{F3C09D58-0A14-58C6-47B7-0675853566F1}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name Namespace="Tc2_System">T_AmsNetID</Name>
@@ -3920,31 +3920,31 @@
         <Name>bBusy</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <GetCodeOffs>80382936</GetCodeOffs>
+        <GetCodeOffs>80382984</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>bError</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <GetCodeOffs>80383008</GetCodeOffs>
+        <GetCodeOffs>80383056</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>hrErrorCode</Name>
         <Type GUID="{18071995-0000-0000-0000-000000000019}">HRESULT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80383024</GetCodeOffs>
+        <GetCodeOffs>80383072</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>nStringSize</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80382984</GetCodeOffs>
+        <GetCodeOffs>80383032</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sResult</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>80383016</GetCodeOffs>
+        <GetCodeOffs>80383064</GetCodeOffs>
         <Properties>
           <Property>
             <Name>TcEncoding</Name>
@@ -5196,15 +5196,15 @@
         <Name>nId</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80382808</GetCodeOffs>
-        <SetCodeOffs>80382856</SetCodeOffs>
+        <GetCodeOffs>80382856</GetCodeOffs>
+        <SetCodeOffs>80382904</SetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sName</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>80382888</GetCodeOffs>
-        <SetCodeOffs>80382912</SetCodeOffs>
+        <GetCodeOffs>80382936</GetCodeOffs>
+        <SetCodeOffs>80382960</SetCodeOffs>
         <Properties>
           <Property>
             <Name>TcEncoding</Name>
@@ -5445,31 +5445,31 @@
         <Name>eSeverity</Name>
         <Type GUID="{B57D3F4A-0836-49B0-81C3-BED5F4817EC9}">TcEventSeverity</Type>
         <BitSize>16</BitSize>
-        <GetCodeOffs>80383120</GetCodeOffs>
+        <GetCodeOffs>80383168</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>ipSourceInfo</Name>
         <Type Namespace="LCLS_General.Tc3_EventLogger">I_TcSourceInfo</Type>
         <BitSize>64</BitSize>
-        <GetCodeOffs>80383080</GetCodeOffs>
+        <GetCodeOffs>80383128</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>nEventId</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80383256</GetCodeOffs>
+        <GetCodeOffs>80383304</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>nUniqueId</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80383264</GetCodeOffs>
+        <GetCodeOffs>80383312</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sEventClassName</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>80383176</GetCodeOffs>
+        <GetCodeOffs>80383224</GetCodeOffs>
         <Properties>
           <Property>
             <Name>TcEncoding</Name>
@@ -5481,7 +5481,7 @@
         <Name>sEventText</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>80383272</GetCodeOffs>
+        <GetCodeOffs>80383320</GetCodeOffs>
         <Properties>
           <Property>
             <Name>TcEncoding</Name>
@@ -6074,7 +6074,7 @@
         <Name>nTimeSent</Name>
         <Type>ULINT</Type>
         <BitSize>64</BitSize>
-        <GetCodeOffs>80383328</GetCodeOffs>
+        <GetCodeOffs>80383376</GetCodeOffs>
         <Properties>
           <Property>
             <Name>TcDisplayTypeGUID</Name>
@@ -13300,14 +13300,14 @@ contributing fast faults, unless the FFO is currently vetoed.
         <Type>BOOL</Type>
         <Comment> is TRUE if a buffer is available.</Comment>
         <BitSize>8</BitSize>
-        <GetCodeOffs>80389720</GetCodeOffs>
+        <GetCodeOffs>80389768</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>nBufferSize</Name>
         <Type>UDINT</Type>
         <Comment> current buffer size in bytes.</Comment>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80389624</GetCodeOffs>
+        <GetCodeOffs>80389672</GetCodeOffs>
       </PropertyItem>
       <Method>
         <Name RpcEnable="plc" VTableIndex="3">__getnBufferSize</Name>
@@ -14403,7 +14403,7 @@ contributing fast faults, unless the FFO is currently vetoed.
         <Type Namespace="lcls_twincat_common_components.lcls_twincat_motion.Tc3_IPCDiag.Tc3_DynamicMemory">I_DynMem_Manager</Type>
         <Comment> dynamic memory manager used in the Tc3_IPCDiag library</Comment>
         <BitSize>64</BitSize>
-        <GetCodeOffs>80389872</GetCodeOffs>
+        <GetCodeOffs>80389920</GetCodeOffs>
       </PropertyItem>
       <Method>
         <Name>GetParameterByIdx</Name>
@@ -15062,7 +15062,7 @@ contributing fast faults, unless the FFO is currently vetoed.
         <Type Namespace="lcls_twincat_common_components.lcls_twincat_motion.Tc3_IPCDiag.Tc3_DynamicMemory">I_DynMem_Manager</Type>
         <Comment> dynamic memory manager used in the Tc3_IPCDiag library</Comment>
         <BitSize>64</BitSize>
-        <GetCodeOffs>80389984</GetCodeOffs>
+        <GetCodeOffs>80390032</GetCodeOffs>
       </PropertyItem>
       <Method>
         <Name>Clear</Name>
@@ -33671,7 +33671,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
     </DataType>
     <DataType>
       <Name Namespace="lcls_twincat_motion">FB_StatePMPSEnables</Name>
-      <BitSize>27456</BitSize>
+      <BitSize>27520</BitSize>
       <SubItem>
         <Name>stMotionStage</Name>
         <Type Namespace="lcls_twincat_motion" ReferenceTo="true">ST_MotionStage</Type>
@@ -33849,6 +33849,18 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
         <BitSize>25920</BitSize>
         <BitOffs>1536</BitOffs>
       </SubItem>
+      <SubItem>
+        <Name>bLockBounds</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>27456</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bErrorMsg</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>27464</BitOffs>
+      </SubItem>
       <Action>
         <Name>SetEnables</Name>
       </Action>
@@ -33870,7 +33882,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
     </DataType>
     <DataType>
       <Name Namespace="lcls_twincat_motion">FB_StatePMPSEnablesND</Name>
-      <BitSize>135360</BitSize>
+      <BitSize>135552</BitSize>
       <SubItem>
         <Name>astMotionStage</Name>
         <Type Namespace="lcls_twincat_motion">ST_MotionStage</Type>
@@ -34102,26 +34114,26 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
           <Elements>3</Elements>
         </ArrayInfo>
         <Comment> The individual state limit function blocks</Comment>
-        <BitSize>82368</BitSize>
+        <BitSize>82560</BitSize>
         <BitOffs>1088</BitOffs>
       </SubItem>
       <SubItem>
         <Name>ffMaint</Name>
         <Type Namespace="PMPS">FB_FastFault</Type>
         <BitSize>25920</BitSize>
-        <BitOffs>83456</BitOffs>
+        <BitOffs>83648</BitOffs>
       </SubItem>
       <SubItem>
         <Name>ffProgrammerError</Name>
         <Type Namespace="PMPS">FB_FastFault</Type>
         <BitSize>25920</BitSize>
-        <BitOffs>109376</BitOffs>
+        <BitOffs>109568</BitOffs>
       </SubItem>
       <SubItem>
         <Name>nIter</Name>
         <Type>DINT</Type>
         <BitSize>32</BitSize>
-        <BitOffs>135296</BitOffs>
+        <BitOffs>135488</BitOffs>
       </SubItem>
       <Action>
         <Name>DoLimits</Name>
@@ -34673,7 +34685,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
     </DataType>
     <DataType>
       <Name Namespace="lcls_twincat_motion">FB_PositionStatePMPSND_Core</Name>
-      <BitSize>648384</BitSize>
+      <BitSize>648576</BitSize>
       <SubItem>
         <Name>astMotionStageMax</Name>
         <Type Namespace="lcls_twincat_motion">ST_MotionStage</Type>
@@ -34915,26 +34927,26 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
       <SubItem>
         <Name>fbStatePMPSEnables</Name>
         <Type Namespace="lcls_twincat_motion">FB_StatePMPSEnablesND</Type>
-        <BitSize>135360</BitSize>
+        <BitSize>135552</BitSize>
         <BitOffs>291968</BitOffs>
       </SubItem>
       <SubItem>
         <Name>fbMiscStatesErrorFFO</Name>
         <Type Namespace="lcls_twincat_motion">FB_MiscStatesErrorFFO</Type>
         <BitSize>106944</BitSize>
-        <BitOffs>427328</BitOffs>
+        <BitOffs>427520</BitOffs>
       </SubItem>
       <SubItem>
         <Name>fbPerMotorFFO</Name>
         <Type Namespace="lcls_twincat_motion">FB_PerMotorFFOND</Type>
         <BitSize>114048</BitSize>
-        <BitOffs>534272</BitOffs>
+        <BitOffs>534464</BitOffs>
       </SubItem>
       <SubItem>
         <Name>eStatePMPSStatus</Name>
         <Type Namespace="lcls_twincat_motion">E_StatePMPSStatus</Type>
         <BitSize>16</BitSize>
-        <BitOffs>648320</BitOffs>
+        <BitOffs>648512</BitOffs>
       </SubItem>
       <Properties>
         <Property>
@@ -34945,7 +34957,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
     </DataType>
     <DataType>
       <Name Namespace="lcls_twincat_motion">FB_PositionStatePMPS1D</Name>
-      <BitSize>1069440</BitSize>
+      <BitSize>1069632</BitSize>
       <SubItem>
         <Name>stMotionStage</Name>
         <Type Namespace="lcls_twincat_motion" ReferenceTo="true">ST_MotionStage</Type>
@@ -35204,7 +35216,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
       <SubItem>
         <Name>fbPMPSCore</Name>
         <Type Namespace="lcls_twincat_motion">FB_PositionStatePMPSND_Core</Type>
-        <BitSize>648384</BitSize>
+        <BitSize>648576</BitSize>
         <BitOffs>276288</BitOffs>
       </SubItem>
       <SubItem>
@@ -35215,7 +35227,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
           <Elements>3</Elements>
         </ArrayInfo>
         <BitSize>77952</BitSize>
-        <BitOffs>924672</BitOffs>
+        <BitOffs>924864</BitOffs>
       </SubItem>
       <SubItem>
         <Name>astPositionStateMax</Name>
@@ -35229,7 +35241,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
           <Elements>6</Elements>
         </ArrayInfo>
         <BitSize>66816</BitSize>
-        <BitOffs>1002624</BitOffs>
+        <BitOffs>1002816</BitOffs>
       </SubItem>
       <Properties>
         <Property>
@@ -37397,7 +37409,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
     </DataType>
     <DataType>
       <Name Namespace="lcls_twincat_common_components">FB_XPIM</Name>
-      <BitSize>2167552</BitSize>
+      <BitSize>2167744</BitSize>
       <SubItem>
         <Name>stYStage</Name>
         <Type Namespace="lcls_twincat_motion" ReferenceTo="true">ST_MotionStage</Type>
@@ -37817,7 +37829,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
       <SubItem>
         <Name>fbStates</Name>
         <Type Namespace="lcls_twincat_motion">FB_PositionStatePMPS1D</Type>
-        <BitSize>1069440</BitSize>
+        <BitSize>1069632</BitSize>
         <BitOffs>1006016</BitOffs>
         <Properties>
           <Property>
@@ -37837,19 +37849,19 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
           <Elements>6</Elements>
         </ArrayInfo>
         <BitSize>22272</BitSize>
-        <BitOffs>2075456</BitOffs>
+        <BitOffs>2075648</BitOffs>
       </SubItem>
       <SubItem>
         <Name>fbArrCheckWrite</Name>
         <Type Namespace="lcls_twincat_common_components">FB_CheckPositionStateWrite</Type>
         <BitSize>22528</BitSize>
-        <BitOffs>2097728</BitOffs>
+        <BitOffs>2097920</BitOffs>
       </SubItem>
       <SubItem>
         <Name>fbFilterWheel</Name>
         <Type Namespace="lcls_twincat_common_components">FB_XPIM_FilterWheel</Type>
         <BitSize>46208</BitSize>
-        <BitOffs>2120256</BitOffs>
+        <BitOffs>2120448</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -37861,7 +37873,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
         <Name>fbOpal</Name>
         <Type Namespace="lcls_twincat_common_components">FB_XPIM_Opal</Type>
         <BitSize>128</BitSize>
-        <BitOffs>2166464</BitOffs>
+        <BitOffs>2166656</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -37873,7 +37885,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
         <Name>fbLED</Name>
         <Type Namespace="lcls_twincat_common_components">FB_XPIM_LED</Type>
         <BitSize>640</BitSize>
-        <BitOffs>2166592</BitOffs>
+        <BitOffs>2166784</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -37885,7 +37897,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
         <Name>fbFlowSwitch</Name>
         <Type Namespace="lcls_twincat_common_components">FB_XTES_Flowswitch</Type>
         <BitSize>128</BitSize>
-        <BitOffs>2167232</BitOffs>
+        <BitOffs>2167424</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -37898,7 +37910,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
         <Type>LREAL</Type>
         <Comment> State defaults if not provided</Comment>
         <BitSize>64</BitSize>
-        <BitOffs>2167360</BitOffs>
+        <BitOffs>2167552</BitOffs>
         <Default>
           <Value>2</Value>
         </Default>
@@ -37907,7 +37919,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
         <Name>fAccel</Name>
         <Type>LREAL</Type>
         <BitSize>64</BitSize>
-        <BitOffs>2167424</BitOffs>
+        <BitOffs>2167616</BitOffs>
         <Default>
           <Value>200</Value>
         </Default>
@@ -37916,7 +37928,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
         <Name>fOutDecel</Name>
         <Type>LREAL</Type>
         <BitSize>64</BitSize>
-        <BitOffs>2167488</BitOffs>
+        <BitOffs>2167680</BitOffs>
         <Default>
           <Value>25</Value>
         </Default>
@@ -37930,7 +37942,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
     </DataType>
     <DataType>
       <Name Namespace="lcls_twincat_motion">FB_PositionStatePMPS3D</Name>
-      <BitSize>1069696</BitSize>
+      <BitSize>1069888</BitSize>
       <SubItem>
         <Name>stMotionStage1</Name>
         <Type Namespace="lcls_twincat_motion" ReferenceTo="true">ST_MotionStage</Type>
@@ -38265,7 +38277,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
       <SubItem>
         <Name>fbPMPSCore</Name>
         <Type Namespace="lcls_twincat_motion">FB_PositionStatePMPSND_Core</Type>
-        <BitSize>648384</BitSize>
+        <BitSize>648576</BitSize>
         <BitOffs>276544</BitOffs>
       </SubItem>
       <SubItem>
@@ -38276,7 +38288,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
           <Elements>3</Elements>
         </ArrayInfo>
         <BitSize>77952</BitSize>
-        <BitOffs>924928</BitOffs>
+        <BitOffs>925120</BitOffs>
       </SubItem>
       <SubItem>
         <Name>astPositionStateMax</Name>
@@ -38290,7 +38302,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
           <Elements>6</Elements>
         </ArrayInfo>
         <BitSize>66816</BitSize>
-        <BitOffs>1002880</BitOffs>
+        <BitOffs>1003072</BitOffs>
       </SubItem>
       <Properties>
         <Property>
@@ -39001,6 +39013,454 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
         <Property>
           <Name>PouType</Name>
           <Value>FunctionBlock</Value>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
+      <Name GUID="{4591E628-DBCE-4E33-AE0B-7EB853AA256E}" Namespace="PLC" TcBaseType="true">EPlcPersistentStatus</Name>
+      <BitSize>8</BitSize>
+      <BaseType GUID="{18071995-0000-0000-0000-000000000002}">USINT</BaseType>
+      <EnumInfo>
+        <Text>PS_None</Text>
+        <Enum>0</Enum>
+      </EnumInfo>
+      <EnumInfo>
+        <Text>PS_All</Text>
+        <Enum>1</Enum>
+      </EnumInfo>
+      <EnumInfo>
+        <Text>PS_Partial</Text>
+        <Enum>2</Enum>
+      </EnumInfo>
+    </DataType>
+    <DataType>
+      <Name GUID="{941FDF6E-37CE-4C30-AA23-3236AFA461E2}" Namespace="PLC" TcBaseType="true">PlcAppSystemInfo</Name>
+      <BitSize>2048</BitSize>
+      <SubItem>
+        <Name>ObjId</Name>
+        <Type GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>TaskCnt</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>32</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>OnlineChangeCnt</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>64</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Flags</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000007}">DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>96</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>AdsPort</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>128</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>BootDataLoaded</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>144</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>OldBootData</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>152</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>AppTimestamp</Name>
+        <Type GUID="{18071995-0000-0000-0000-00000000004C}">DT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>160</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>KeepOutputsOnBP</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>192</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>ShutdownInProgress</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>200</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>LicensesPending</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>208</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>BSODOccured</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>216</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>LoggedIn</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>224</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>PersistentStatus</Name>
+        <Type GUID="{4591E628-DBCE-4E33-AE0B-7EB853AA256E}" Namespace="PLC">EPlcPersistentStatus</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>232</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>TComSrvPtr</Name>
+        <Type GUID="{00000030-0000-0000-E000-000000000064}">ITComObjectServer</Type>
+        <BitSize X64="64">32</BitSize>
+        <BitOffs>256</BitOffs>
+        <Properties>
+          <Property>
+            <Name>TcComInterface</Name>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>AppName</Name>
+        <Type GUID="{18071995-0000-0000-0000-00010000003F}">STRING(63)</Type>
+        <BitSize>512</BitSize>
+        <BitOffs>512</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>ProjectName</Name>
+        <Type GUID="{18071995-0000-0000-0000-00010000003F}">STRING(63)</Type>
+        <BitSize>512</BitSize>
+        <BitOffs>1024</BitOffs>
+      </SubItem>
+      <Hides>
+        <Hide GUID="{D91E046A-A488-4D27-8D43-0F3C40ED5081}"/>
+        <Hide GUID="{5DCEB2BC-E196-43AD-80B7-EBACF31A430B}"/>
+        <Hide GUID="{1B9FDDE4-B3B7-4F0F-AB14-24EDC2F643E7}"/>
+        <Hide GUID="{C1C52E30-BC0B-44CA-BF39-E2FE7F2D145C}"/>
+        <Hide GUID="{5C8FF47F-7F83-4493-8D21-F1FF8A08F75A}"/>
+      </Hides>
+    </DataType>
+    <DataType>
+      <Name GUID="{56294066-FFF7-46F3-8206-FA06A30B13BA}" Namespace="PLC" TcBaseType="true">PlcTaskSystemInfo</Name>
+      <BitSize>1024</BitSize>
+      <SubItem>
+        <Name>ObjId</Name>
+        <Type GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>CycleTime</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>32</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Priority</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>64</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>AdsPort</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>80</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>CycleCount</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>96</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>DcTaskTime</Name>
+        <Type GUID="{18071995-0000-0000-0000-00000000000C}">LINT</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>128</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>LastExecTime</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>192</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>FirstCycle</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>224</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>CycleTimeExceeded</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>232</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>InCallAfterOutputUpdate</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>240</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>RTViolation</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>248</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>TaskName</Name>
+        <Type GUID="{18071995-0000-0000-0000-00010000003F}">STRING(63)</Type>
+        <BitSize>512</BitSize>
+        <BitOffs>512</BitOffs>
+      </SubItem>
+      <Hides>
+        <Hide GUID="{6A76D020-03A2-465C-A678-C341951E9EF3}"/>
+        <Hide GUID="{6F7D679F-72A0-4831-A7F1-085F839743ED}"/>
+      </Hides>
+    </DataType>
+    <DataType>
+      <Name>_Implicit_KindOfTask</Name>
+      <BitSize>16</BitSize>
+      <BaseType>INT</BaseType>
+      <EnumInfo>
+        <Text>_implicit_cyclic</Text>
+        <Enum>0</Enum>
+      </EnumInfo>
+      <EnumInfo>
+        <Text>_implicit_event</Text>
+        <Enum>1</Enum>
+      </EnumInfo>
+      <EnumInfo>
+        <Text>_implicit_external</Text>
+        <Enum>2</Enum>
+      </EnumInfo>
+      <EnumInfo>
+        <Text>_implicit_freewheeling</Text>
+        <Enum>3</Enum>
+      </EnumInfo>
+      <Properties>
+        <Property>
+          <Name>hide</Name>
+        </Property>
+        <Property>
+          <Name>generate_implicit_init_function</Name>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
+      <Name>_Implicit_Jitter_Distribution</Name>
+      <BitSize>48</BitSize>
+      <SubItem>
+        <Name>wRangeMax</Name>
+        <Type>WORD</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>wCountJitterNeg</Name>
+        <Type>WORD</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>16</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>wCountJitterPos</Name>
+        <Type>WORD</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>32</BitOffs>
+      </SubItem>
+      <Properties>
+        <Property>
+          <Name>hide</Name>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
+      <Name>_Implicit_Task_Info</Name>
+      <BitSize>896</BitSize>
+      <SubItem>
+        <Name>dwVersion</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>pszName</Name>
+        <Type PointerTo="1">STRING(80)</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>64</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>nPriority</Name>
+        <Type>INT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>128</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>KindOf</Name>
+        <Type>_Implicit_KindOfTask</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>144</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bWatchdog</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>160</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bProfilingTask</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>168</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwEventFunctionPointer</Name>
+        <Type PointerTo="1">BYTE</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>192</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>pszExternalEvent</Name>
+        <Type PointerTo="1">STRING(80)</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>256</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwTaskEntryFunctionPointer</Name>
+        <Type PointerTo="1">BYTE</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>320</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwWatchdogSensitivity</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>384</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwInterval</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>416</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwWatchdogTime</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>448</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwLastCycleTime</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>480</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwAverageCycleTime</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>512</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwMaxCycleTime</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>544</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwMinCycleTime</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>576</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>diJitter</Name>
+        <Type>DINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>608</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>diJitterMin</Name>
+        <Type>DINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>640</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>diJitterMax</Name>
+        <Type>DINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>672</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwCycleCount</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>704</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>wTaskStatus</Name>
+        <Type>WORD</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>736</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>wNumOfJitterDistributions</Name>
+        <Type>WORD</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>752</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>pJitterDistribution</Name>
+        <Type PointerTo="1">_Implicit_Jitter_Distribution</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>768</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bWithinSPSTimeSlicing</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>832</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>byDummy</Name>
+        <Type>BYTE</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>840</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bShouldBlock</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>848</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bActive</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>856</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwIECCycleCount</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>864</BitOffs>
+      </SubItem>
+      <Properties>
+        <Property>
+          <Name>hide</Name>
         </Property>
       </Properties>
     </DataType>
@@ -51371,454 +51831,6 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
       </Properties>
     </DataType>
     <DataType>
-      <Name GUID="{4591E628-DBCE-4E33-AE0B-7EB853AA256E}" Namespace="PLC" TcBaseType="true">EPlcPersistentStatus</Name>
-      <BitSize>8</BitSize>
-      <BaseType GUID="{18071995-0000-0000-0000-000000000002}">USINT</BaseType>
-      <EnumInfo>
-        <Text>PS_None</Text>
-        <Enum>0</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>PS_All</Text>
-        <Enum>1</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>PS_Partial</Text>
-        <Enum>2</Enum>
-      </EnumInfo>
-    </DataType>
-    <DataType>
-      <Name GUID="{941FDF6E-37CE-4C30-AA23-3236AFA461E2}" Namespace="PLC" TcBaseType="true">PlcAppSystemInfo</Name>
-      <BitSize>2048</BitSize>
-      <SubItem>
-        <Name>ObjId</Name>
-        <Type GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>0</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>TaskCnt</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>32</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>OnlineChangeCnt</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>64</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>Flags</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000007}">DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>96</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>AdsPort</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>128</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>BootDataLoaded</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>144</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>OldBootData</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>152</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>AppTimestamp</Name>
-        <Type GUID="{18071995-0000-0000-0000-00000000004C}">DT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>160</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>KeepOutputsOnBP</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>192</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>ShutdownInProgress</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>200</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>LicensesPending</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>208</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>BSODOccured</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>216</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>LoggedIn</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>224</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>PersistentStatus</Name>
-        <Type GUID="{4591E628-DBCE-4E33-AE0B-7EB853AA256E}" Namespace="PLC">EPlcPersistentStatus</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>232</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>TComSrvPtr</Name>
-        <Type GUID="{00000030-0000-0000-E000-000000000064}">ITComObjectServer</Type>
-        <BitSize X64="64">32</BitSize>
-        <BitOffs>256</BitOffs>
-        <Properties>
-          <Property>
-            <Name>TcComInterface</Name>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>AppName</Name>
-        <Type GUID="{18071995-0000-0000-0000-00010000003F}">STRING(63)</Type>
-        <BitSize>512</BitSize>
-        <BitOffs>512</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>ProjectName</Name>
-        <Type GUID="{18071995-0000-0000-0000-00010000003F}">STRING(63)</Type>
-        <BitSize>512</BitSize>
-        <BitOffs>1024</BitOffs>
-      </SubItem>
-      <Hides>
-        <Hide GUID="{D91E046A-A488-4D27-8D43-0F3C40ED5081}"/>
-        <Hide GUID="{5DCEB2BC-E196-43AD-80B7-EBACF31A430B}"/>
-        <Hide GUID="{1B9FDDE4-B3B7-4F0F-AB14-24EDC2F643E7}"/>
-        <Hide GUID="{C1C52E30-BC0B-44CA-BF39-E2FE7F2D145C}"/>
-        <Hide GUID="{5C8FF47F-7F83-4493-8D21-F1FF8A08F75A}"/>
-      </Hides>
-    </DataType>
-    <DataType>
-      <Name GUID="{56294066-FFF7-46F3-8206-FA06A30B13BA}" Namespace="PLC" TcBaseType="true">PlcTaskSystemInfo</Name>
-      <BitSize>1024</BitSize>
-      <SubItem>
-        <Name>ObjId</Name>
-        <Type GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>0</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>CycleTime</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>32</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>Priority</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>64</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>AdsPort</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>80</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>CycleCount</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>96</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>DcTaskTime</Name>
-        <Type GUID="{18071995-0000-0000-0000-00000000000C}">LINT</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>128</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>LastExecTime</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>192</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>FirstCycle</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>224</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>CycleTimeExceeded</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>232</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>InCallAfterOutputUpdate</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>240</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>RTViolation</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>248</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>TaskName</Name>
-        <Type GUID="{18071995-0000-0000-0000-00010000003F}">STRING(63)</Type>
-        <BitSize>512</BitSize>
-        <BitOffs>512</BitOffs>
-      </SubItem>
-      <Hides>
-        <Hide GUID="{6A76D020-03A2-465C-A678-C341951E9EF3}"/>
-        <Hide GUID="{6F7D679F-72A0-4831-A7F1-085F839743ED}"/>
-      </Hides>
-    </DataType>
-    <DataType>
-      <Name>_Implicit_KindOfTask</Name>
-      <BitSize>16</BitSize>
-      <BaseType>INT</BaseType>
-      <EnumInfo>
-        <Text>_implicit_cyclic</Text>
-        <Enum>0</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>_implicit_event</Text>
-        <Enum>1</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>_implicit_external</Text>
-        <Enum>2</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>_implicit_freewheeling</Text>
-        <Enum>3</Enum>
-      </EnumInfo>
-      <Properties>
-        <Property>
-          <Name>hide</Name>
-        </Property>
-        <Property>
-          <Name>generate_implicit_init_function</Name>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name>_Implicit_Jitter_Distribution</Name>
-      <BitSize>48</BitSize>
-      <SubItem>
-        <Name>wRangeMax</Name>
-        <Type>WORD</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>0</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>wCountJitterNeg</Name>
-        <Type>WORD</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>16</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>wCountJitterPos</Name>
-        <Type>WORD</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>32</BitOffs>
-      </SubItem>
-      <Properties>
-        <Property>
-          <Name>hide</Name>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name>_Implicit_Task_Info</Name>
-      <BitSize>896</BitSize>
-      <SubItem>
-        <Name>dwVersion</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>0</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>pszName</Name>
-        <Type PointerTo="1">STRING(80)</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>64</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>nPriority</Name>
-        <Type>INT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>128</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>KindOf</Name>
-        <Type>_Implicit_KindOfTask</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>144</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bWatchdog</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>160</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bProfilingTask</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>168</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwEventFunctionPointer</Name>
-        <Type PointerTo="1">BYTE</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>192</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>pszExternalEvent</Name>
-        <Type PointerTo="1">STRING(80)</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>256</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwTaskEntryFunctionPointer</Name>
-        <Type PointerTo="1">BYTE</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>320</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwWatchdogSensitivity</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>384</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwInterval</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>416</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwWatchdogTime</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>448</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwLastCycleTime</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>480</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwAverageCycleTime</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>512</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwMaxCycleTime</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>544</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwMinCycleTime</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>576</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>diJitter</Name>
-        <Type>DINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>608</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>diJitterMin</Name>
-        <Type>DINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>640</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>diJitterMax</Name>
-        <Type>DINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>672</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwCycleCount</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>704</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>wTaskStatus</Name>
-        <Type>WORD</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>736</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>wNumOfJitterDistributions</Name>
-        <Type>WORD</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>752</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>pJitterDistribution</Name>
-        <Type PointerTo="1">_Implicit_Jitter_Distribution</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>768</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bWithinSPSTimeSlicing</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>832</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>byDummy</Name>
-        <Type>BYTE</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>840</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bShouldBlock</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>848</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bActive</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>856</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwIECCycleCount</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>864</BitOffs>
-      </SubItem>
-      <Properties>
-        <Property>
-          <Name>hide</Name>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
       <Name Namespace="LCLS_General">ST_System</Name>
       <Comment>Defacto system structure, must be included in all projects</Comment>
       <BitSize>40</BitSize>
@@ -62957,7 +62969,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638440768</BitOffs>
+            <BitOffs>638440960</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[1].bLimitForwardEnable</Name>
@@ -62970,7 +62982,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638448768</BitOffs>
+            <BitOffs>638448960</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[1].bLimitBackwardEnable</Name>
@@ -62983,7 +62995,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638448776</BitOffs>
+            <BitOffs>638448968</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[1].bHome</Name>
@@ -62996,7 +63008,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638448784</BitOffs>
+            <BitOffs>638448976</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[1].bHardwareEnable</Name>
@@ -63019,7 +63031,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638448800</BitOffs>
+            <BitOffs>638448992</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[1].nRawEncoderULINT</Name>
@@ -63032,7 +63044,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638448832</BitOffs>
+            <BitOffs>638449024</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[1].nRawEncoderUINT</Name>
@@ -63045,7 +63057,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638448896</BitOffs>
+            <BitOffs>638449088</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[1].nRawEncoderINT</Name>
@@ -63058,7 +63070,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638448912</BitOffs>
+            <BitOffs>638449104</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[2].Axis.NcToPlc</Name>
@@ -63070,7 +63082,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638466752</BitOffs>
+            <BitOffs>638466944</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[2].bLimitForwardEnable</Name>
@@ -63083,7 +63095,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638474752</BitOffs>
+            <BitOffs>638474944</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[2].bLimitBackwardEnable</Name>
@@ -63096,7 +63108,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638474760</BitOffs>
+            <BitOffs>638474952</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[2].bHome</Name>
@@ -63109,7 +63121,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638474768</BitOffs>
+            <BitOffs>638474960</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[2].bHardwareEnable</Name>
@@ -63132,7 +63144,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638474784</BitOffs>
+            <BitOffs>638474976</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[2].nRawEncoderULINT</Name>
@@ -63145,7 +63157,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638474816</BitOffs>
+            <BitOffs>638475008</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[2].nRawEncoderUINT</Name>
@@ -63158,7 +63170,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638474880</BitOffs>
+            <BitOffs>638475072</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[2].nRawEncoderINT</Name>
@@ -63171,7 +63183,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638474896</BitOffs>
+            <BitOffs>638475088</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[3].Axis.NcToPlc</Name>
@@ -63183,7 +63195,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638492736</BitOffs>
+            <BitOffs>638492928</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[3].bLimitForwardEnable</Name>
@@ -63196,7 +63208,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638500736</BitOffs>
+            <BitOffs>638500928</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[3].bLimitBackwardEnable</Name>
@@ -63209,7 +63221,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638500744</BitOffs>
+            <BitOffs>638500936</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[3].bHome</Name>
@@ -63222,7 +63234,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638500752</BitOffs>
+            <BitOffs>638500944</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[3].bHardwareEnable</Name>
@@ -63245,7 +63257,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638500768</BitOffs>
+            <BitOffs>638500960</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[3].nRawEncoderULINT</Name>
@@ -63258,7 +63270,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638500800</BitOffs>
+            <BitOffs>638500992</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[3].nRawEncoderUINT</Name>
@@ -63271,7 +63283,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638500864</BitOffs>
+            <BitOffs>638501056</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[3].nRawEncoderINT</Name>
@@ -63284,7 +63296,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638500880</BitOffs>
+            <BitOffs>638501072</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbFlowSwitch.bFlowOk</Name>
@@ -63304,7 +63316,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638676288</BitOffs>
+            <BitOffs>638676480</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.stEL6In</Name>
@@ -63316,7 +63328,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638676544</BitOffs>
+            <BitOffs>638676736</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M7.Axis.NcToPlc</Name>
@@ -63328,7 +63340,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638678016</BitOffs>
+            <BitOffs>638678208</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M7.bLimitForwardEnable</Name>
@@ -63341,7 +63353,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638686016</BitOffs>
+            <BitOffs>638686208</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M7.bLimitBackwardEnable</Name>
@@ -63354,7 +63366,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638686024</BitOffs>
+            <BitOffs>638686216</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M7.bHome</Name>
@@ -63367,7 +63379,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638686032</BitOffs>
+            <BitOffs>638686224</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M7.bHardwareEnable</Name>
@@ -63390,7 +63402,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638686048</BitOffs>
+            <BitOffs>638686240</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M7.nRawEncoderULINT</Name>
@@ -63403,7 +63415,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638686080</BitOffs>
+            <BitOffs>638686272</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M7.nRawEncoderUINT</Name>
@@ -63416,7 +63428,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638686144</BitOffs>
+            <BitOffs>638686336</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M7.nRawEncoderINT</Name>
@@ -63429,7 +63441,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638686160</BitOffs>
+            <BitOffs>638686352</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbMotion7.fbDriveVirtual.MasterAxis.NcToPlc</Name>
@@ -63441,7 +63453,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>638705536</BitOffs>
+            <BitOffs>638705728</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M8.Axis.NcToPlc</Name>
@@ -63453,7 +63465,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639032512</BitOffs>
+            <BitOffs>639032704</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M8.bLimitForwardEnable</Name>
@@ -63466,7 +63478,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639040512</BitOffs>
+            <BitOffs>639040704</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M8.bLimitBackwardEnable</Name>
@@ -63479,7 +63491,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639040520</BitOffs>
+            <BitOffs>639040712</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M8.bHome</Name>
@@ -63492,7 +63504,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639040528</BitOffs>
+            <BitOffs>639040720</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M8.bHardwareEnable</Name>
@@ -63515,7 +63527,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639040544</BitOffs>
+            <BitOffs>639040736</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M8.nRawEncoderULINT</Name>
@@ -63528,7 +63540,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639040576</BitOffs>
+            <BitOffs>639040768</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M8.nRawEncoderUINT</Name>
@@ -63541,7 +63553,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639040640</BitOffs>
+            <BitOffs>639040832</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M8.nRawEncoderINT</Name>
@@ -63554,7 +63566,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639040656</BitOffs>
+            <BitOffs>639040848</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbMotion8.fbDriveVirtual.MasterAxis.NcToPlc</Name>
@@ -63566,7 +63578,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639060032</BitOffs>
+            <BitOffs>639060224</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M9.Axis.NcToPlc</Name>
@@ -63578,7 +63590,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639387008</BitOffs>
+            <BitOffs>639387200</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M9.bLimitForwardEnable</Name>
@@ -63591,7 +63603,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639395008</BitOffs>
+            <BitOffs>639395200</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M9.bLimitBackwardEnable</Name>
@@ -63604,7 +63616,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639395016</BitOffs>
+            <BitOffs>639395208</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M9.bHome</Name>
@@ -63617,7 +63629,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639395024</BitOffs>
+            <BitOffs>639395216</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M9.bHardwareEnable</Name>
@@ -63640,7 +63652,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639395040</BitOffs>
+            <BitOffs>639395232</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M9.nRawEncoderULINT</Name>
@@ -63653,7 +63665,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639395072</BitOffs>
+            <BitOffs>639395264</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M9.nRawEncoderUINT</Name>
@@ -63666,7 +63678,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639395136</BitOffs>
+            <BitOffs>639395328</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M9.nRawEncoderINT</Name>
@@ -63679,7 +63691,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639395152</BitOffs>
+            <BitOffs>639395344</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbMotion9.fbDriveVirtual.MasterAxis.NcToPlc</Name>
@@ -63691,7 +63703,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639414528</BitOffs>
+            <BitOffs>639414720</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[1].Axis.NcToPlc</Name>
@@ -63703,7 +63715,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640666432</BitOffs>
+            <BitOffs>640666816</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[1].bLimitForwardEnable</Name>
@@ -63716,7 +63728,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640674432</BitOffs>
+            <BitOffs>640674816</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[1].bLimitBackwardEnable</Name>
@@ -63729,7 +63741,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640674440</BitOffs>
+            <BitOffs>640674824</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[1].bHome</Name>
@@ -63742,7 +63754,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640674448</BitOffs>
+            <BitOffs>640674832</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[1].bHardwareEnable</Name>
@@ -63765,7 +63777,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640674464</BitOffs>
+            <BitOffs>640674848</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[1].nRawEncoderULINT</Name>
@@ -63778,7 +63790,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640674496</BitOffs>
+            <BitOffs>640674880</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[1].nRawEncoderUINT</Name>
@@ -63791,7 +63803,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640674560</BitOffs>
+            <BitOffs>640674944</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[1].nRawEncoderINT</Name>
@@ -63804,7 +63816,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640674576</BitOffs>
+            <BitOffs>640674960</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[2].Axis.NcToPlc</Name>
@@ -63816,7 +63828,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640692416</BitOffs>
+            <BitOffs>640692800</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[2].bLimitForwardEnable</Name>
@@ -63829,7 +63841,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640700416</BitOffs>
+            <BitOffs>640700800</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[2].bLimitBackwardEnable</Name>
@@ -63842,7 +63854,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640700424</BitOffs>
+            <BitOffs>640700808</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[2].bHome</Name>
@@ -63855,7 +63867,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640700432</BitOffs>
+            <BitOffs>640700816</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[2].bHardwareEnable</Name>
@@ -63878,7 +63890,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640700448</BitOffs>
+            <BitOffs>640700832</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[2].nRawEncoderULINT</Name>
@@ -63891,7 +63903,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640700480</BitOffs>
+            <BitOffs>640700864</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[2].nRawEncoderUINT</Name>
@@ -63904,7 +63916,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640700544</BitOffs>
+            <BitOffs>640700928</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[2].nRawEncoderINT</Name>
@@ -63917,7 +63929,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640700560</BitOffs>
+            <BitOffs>640700944</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[3].Axis.NcToPlc</Name>
@@ -63929,7 +63941,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640718400</BitOffs>
+            <BitOffs>640718784</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[3].bLimitForwardEnable</Name>
@@ -63942,7 +63954,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640726400</BitOffs>
+            <BitOffs>640726784</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[3].bLimitBackwardEnable</Name>
@@ -63955,7 +63967,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640726408</BitOffs>
+            <BitOffs>640726792</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[3].bHome</Name>
@@ -63968,7 +63980,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640726416</BitOffs>
+            <BitOffs>640726800</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[3].bHardwareEnable</Name>
@@ -63991,7 +64003,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640726432</BitOffs>
+            <BitOffs>640726816</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[3].nRawEncoderULINT</Name>
@@ -64004,7 +64016,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640726464</BitOffs>
+            <BitOffs>640726848</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[3].nRawEncoderUINT</Name>
@@ -64017,7 +64029,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640726528</BitOffs>
+            <BitOffs>640726912</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[3].nRawEncoderINT</Name>
@@ -64030,7 +64042,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640726544</BitOffs>
+            <BitOffs>640726928</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M10.Axis.NcToPlc</Name>
@@ -64042,7 +64054,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640974144</BitOffs>
+            <BitOffs>640974528</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M10.bLimitForwardEnable</Name>
@@ -64055,7 +64067,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640982144</BitOffs>
+            <BitOffs>640982528</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M10.bLimitBackwardEnable</Name>
@@ -64068,7 +64080,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640982152</BitOffs>
+            <BitOffs>640982536</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M10.bHome</Name>
@@ -64081,7 +64093,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640982160</BitOffs>
+            <BitOffs>640982544</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M10.bHardwareEnable</Name>
@@ -64104,7 +64116,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640982176</BitOffs>
+            <BitOffs>640982560</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M10.nRawEncoderULINT</Name>
@@ -64117,7 +64129,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640982208</BitOffs>
+            <BitOffs>640982592</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M10.nRawEncoderUINT</Name>
@@ -64130,7 +64142,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640982272</BitOffs>
+            <BitOffs>640982656</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M10.nRawEncoderINT</Name>
@@ -64143,7 +64155,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640982288</BitOffs>
+            <BitOffs>640982672</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbMotion10.fbDriveVirtual.MasterAxis.NcToPlc</Name>
@@ -64155,7 +64167,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641001664</BitOffs>
+            <BitOffs>641002048</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[1].Axis.NcToPlc</Name>
@@ -64167,7 +64179,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641598336</BitOffs>
+            <BitOffs>641598720</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[1].bLimitForwardEnable</Name>
@@ -64180,7 +64192,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641606336</BitOffs>
+            <BitOffs>641606720</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[1].bLimitBackwardEnable</Name>
@@ -64193,7 +64205,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641606344</BitOffs>
+            <BitOffs>641606728</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[1].bHome</Name>
@@ -64206,7 +64218,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641606352</BitOffs>
+            <BitOffs>641606736</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[1].bHardwareEnable</Name>
@@ -64229,7 +64241,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641606368</BitOffs>
+            <BitOffs>641606752</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[1].nRawEncoderULINT</Name>
@@ -64242,7 +64254,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641606400</BitOffs>
+            <BitOffs>641606784</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[1].nRawEncoderUINT</Name>
@@ -64255,7 +64267,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641606464</BitOffs>
+            <BitOffs>641606848</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[1].nRawEncoderINT</Name>
@@ -64268,7 +64280,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641606480</BitOffs>
+            <BitOffs>641606864</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[2].Axis.NcToPlc</Name>
@@ -64280,7 +64292,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641624320</BitOffs>
+            <BitOffs>641624704</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[2].bLimitForwardEnable</Name>
@@ -64293,7 +64305,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641632320</BitOffs>
+            <BitOffs>641632704</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[2].bLimitBackwardEnable</Name>
@@ -64306,7 +64318,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641632328</BitOffs>
+            <BitOffs>641632712</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[2].bHome</Name>
@@ -64319,7 +64331,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641632336</BitOffs>
+            <BitOffs>641632720</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[2].bHardwareEnable</Name>
@@ -64342,7 +64354,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641632352</BitOffs>
+            <BitOffs>641632736</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[2].nRawEncoderULINT</Name>
@@ -64355,7 +64367,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641632384</BitOffs>
+            <BitOffs>641632768</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[2].nRawEncoderUINT</Name>
@@ -64368,7 +64380,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641632448</BitOffs>
+            <BitOffs>641632832</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[2].nRawEncoderINT</Name>
@@ -64381,7 +64393,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641632464</BitOffs>
+            <BitOffs>641632848</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[3].Axis.NcToPlc</Name>
@@ -64393,7 +64405,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641650304</BitOffs>
+            <BitOffs>641650688</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[3].bLimitForwardEnable</Name>
@@ -64406,7 +64418,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641658304</BitOffs>
+            <BitOffs>641658688</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[3].bLimitBackwardEnable</Name>
@@ -64419,7 +64431,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641658312</BitOffs>
+            <BitOffs>641658696</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[3].bHome</Name>
@@ -64432,7 +64444,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641658320</BitOffs>
+            <BitOffs>641658704</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[3].bHardwareEnable</Name>
@@ -64455,7 +64467,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641658336</BitOffs>
+            <BitOffs>641658720</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[3].nRawEncoderULINT</Name>
@@ -64468,7 +64480,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641658368</BitOffs>
+            <BitOffs>641658752</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[3].nRawEncoderUINT</Name>
@@ -64481,7 +64493,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641658432</BitOffs>
+            <BitOffs>641658816</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[3].nRawEncoderINT</Name>
@@ -64494,7 +64506,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>641658448</BitOffs>
+            <BitOffs>641658832</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -64734,7 +64746,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>638439744</BitOffs>
+            <BitOffs>638439936</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[1].bBrakeRelease</Name>
@@ -64747,7 +64759,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>638448792</BitOffs>
+            <BitOffs>638448984</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[2].Axis.PlcToNc</Name>
@@ -64759,7 +64771,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>638465728</BitOffs>
+            <BitOffs>638465920</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[2].bBrakeRelease</Name>
@@ -64772,7 +64784,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>638474776</BitOffs>
+            <BitOffs>638474968</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[3].Axis.PlcToNc</Name>
@@ -64784,7 +64796,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>638491712</BitOffs>
+            <BitOffs>638491904</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbStates.astMotionStageMax[3].bBrakeRelease</Name>
@@ -64797,7 +64809,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>638500760</BitOffs>
+            <BitOffs>638500952</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbOpal.bOpalPower</Name>
@@ -64818,7 +64830,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>638675520</BitOffs>
+            <BitOffs>638675712</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0.fbLED.bLEDPower</Name>
@@ -64839,7 +64851,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>638675648</BitOffs>
+            <BitOffs>638675840</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.stEL6Out</Name>
@@ -64851,7 +64863,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>638676736</BitOffs>
+            <BitOffs>638676928</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M7.Axis.PlcToNc</Name>
@@ -64863,7 +64875,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>638676992</BitOffs>
+            <BitOffs>638677184</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M7.bBrakeRelease</Name>
@@ -64876,7 +64888,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>638686040</BitOffs>
+            <BitOffs>638686232</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbMotion7.fbDriveVirtual.MasterAxis.PlcToNc</Name>
@@ -64888,7 +64900,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>638704512</BitOffs>
+            <BitOffs>638704704</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M8.Axis.PlcToNc</Name>
@@ -64900,7 +64912,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>639031488</BitOffs>
+            <BitOffs>639031680</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M8.bBrakeRelease</Name>
@@ -64913,7 +64925,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>639040536</BitOffs>
+            <BitOffs>639040728</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbMotion8.fbDriveVirtual.MasterAxis.PlcToNc</Name>
@@ -64925,7 +64937,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>639059008</BitOffs>
+            <BitOffs>639059200</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M9.Axis.PlcToNc</Name>
@@ -64937,7 +64949,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>639385984</BitOffs>
+            <BitOffs>639386176</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M9.bBrakeRelease</Name>
@@ -64950,7 +64962,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>639395032</BitOffs>
+            <BitOffs>639395224</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbMotion9.fbDriveVirtual.MasterAxis.PlcToNc</Name>
@@ -64962,7 +64974,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>639413504</BitOffs>
+            <BitOffs>639413696</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[1].Axis.PlcToNc</Name>
@@ -64974,7 +64986,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640665408</BitOffs>
+            <BitOffs>640665792</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[1].bBrakeRelease</Name>
@@ -64987,7 +64999,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640674456</BitOffs>
+            <BitOffs>640674840</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[2].Axis.PlcToNc</Name>
@@ -64999,7 +65011,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640691392</BitOffs>
+            <BitOffs>640691776</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[2].bBrakeRelease</Name>
@@ -65012,7 +65024,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640700440</BitOffs>
+            <BitOffs>640700824</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[3].Axis.PlcToNc</Name>
@@ -65024,7 +65036,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640717376</BitOffs>
+            <BitOffs>640717760</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D.astMotionStageMax[3].bBrakeRelease</Name>
@@ -65037,7 +65049,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640726424</BitOffs>
+            <BitOffs>640726808</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M10.Axis.PlcToNc</Name>
@@ -65049,7 +65061,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640973120</BitOffs>
+            <BitOffs>640973504</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M10.bBrakeRelease</Name>
@@ -65062,7 +65074,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640982168</BitOffs>
+            <BitOffs>640982552</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbMotion10.fbDriveVirtual.MasterAxis.PlcToNc</Name>
@@ -65074,7 +65086,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>641000640</BitOffs>
+            <BitOffs>641001024</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[1].Axis.PlcToNc</Name>
@@ -65086,7 +65098,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>641597312</BitOffs>
+            <BitOffs>641597696</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[1].bBrakeRelease</Name>
@@ -65099,7 +65111,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>641606360</BitOffs>
+            <BitOffs>641606744</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[2].Axis.PlcToNc</Name>
@@ -65111,7 +65123,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>641623296</BitOffs>
+            <BitOffs>641623680</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[2].bBrakeRelease</Name>
@@ -65124,7 +65136,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>641632344</BitOffs>
+            <BitOffs>641632728</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[3].Axis.PlcToNc</Name>
@@ -65136,7 +65148,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>641649280</BitOffs>
+            <BitOffs>641649664</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States.astMotionStageMax[3].bBrakeRelease</Name>
@@ -65149,7 +65161,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>641658328</BitOffs>
+            <BitOffs>641658712</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL.fbFastFaultOutput1.q_xFastFaultOut</Name>
@@ -65169,7 +65181,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>642270824</BitOffs>
+            <BitOffs>642271208</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -66062,7 +66074,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
           </Symbol>
           <Symbol>
             <Name>Main.fbIM1L0</Name>
-            <BitSize>2167552</BitSize>
+            <BitSize>2167744</BitSize>
             <BaseType Namespace="lcls_twincat_common_components">FB_XPIM</BaseType>
             <Properties>
               <Property>
@@ -66094,13 +66106,13 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
     </Value>
               </Property>
             </Properties>
-            <BitOffs>638676928</BitOffs>
+            <BitOffs>638677120</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbMotion7</Name>
             <BitSize>328512</BitSize>
             <BaseType Namespace="lcls_twincat_motion">FB_MotionStage</BaseType>
-            <BitOffs>638702912</BitOffs>
+            <BitOffs>638703104</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M8</Name>
@@ -66122,13 +66134,13 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
     </Value>
               </Property>
             </Properties>
-            <BitOffs>639031424</BitOffs>
+            <BitOffs>639031616</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbMotion8</Name>
             <BitSize>328512</BitSize>
             <BaseType Namespace="lcls_twincat_motion">FB_MotionStage</BaseType>
-            <BitOffs>639057408</BitOffs>
+            <BitOffs>639057600</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M9</Name>
@@ -66150,17 +66162,17 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
     </Value>
               </Property>
             </Properties>
-            <BitOffs>639385920</BitOffs>
+            <BitOffs>639386112</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbMotion9</Name>
             <BitSize>328512</BitSize>
             <BaseType Namespace="lcls_twincat_motion">FB_MotionStage</BaseType>
-            <BitOffs>639411904</BitOffs>
+            <BitOffs>639412096</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fb3D</Name>
-            <BitSize>1069696</BitSize>
+            <BitSize>1069888</BitSize>
             <BaseType Namespace="lcls_twincat_motion">FB_PositionStatePMPS3D</BaseType>
             <Properties>
               <Property>
@@ -66173,13 +66185,13 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
     </Value>
               </Property>
             </Properties>
-            <BitOffs>639740416</BitOffs>
+            <BitOffs>639740608</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbStateSetup</Name>
             <BitSize>92416</BitSize>
             <BaseType Namespace="lcls_twincat_motion">FB_StateSetupHelper</BaseType>
-            <BitOffs>640810112</BitOffs>
+            <BitOffs>640810496</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.stDefault</Name>
@@ -66207,7 +66219,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Bool>true</Bool>
               </SubItem>
             </Default>
-            <BitOffs>640902528</BitOffs>
+            <BitOffs>640902912</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.astM7States</Name>
@@ -66217,7 +66229,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
               <LBound>1</LBound>
               <Elements>6</Elements>
             </ArrayInfo>
-            <BitOffs>640906240</BitOffs>
+            <BitOffs>640906624</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.astM8States</Name>
@@ -66227,7 +66239,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
               <LBound>1</LBound>
               <Elements>6</Elements>
             </ArrayInfo>
-            <BitOffs>640928512</BitOffs>
+            <BitOffs>640928896</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.astM9States</Name>
@@ -66237,7 +66249,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
               <LBound>1</LBound>
               <Elements>6</Elements>
             </ArrayInfo>
-            <BitOffs>640950784</BitOffs>
+            <BitOffs>640951168</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M10</Name>
@@ -66259,13 +66271,13 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
     </Value>
               </Property>
             </Properties>
-            <BitOffs>640973056</BitOffs>
+            <BitOffs>640973440</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbMotion10</Name>
             <BitSize>328512</BitSize>
             <BaseType Namespace="lcls_twincat_motion">FB_MotionStage</BaseType>
-            <BitOffs>640999040</BitOffs>
+            <BitOffs>640999424</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbM10States</Name>
@@ -66280,7 +66292,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
     </Value>
               </Property>
             </Properties>
-            <BitOffs>641327552</BitOffs>
+            <BitOffs>641327936</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.astM10States</Name>
@@ -66290,7 +66302,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
               <LBound>1</LBound>
               <Elements>6</Elements>
             </ArrayInfo>
-            <BitOffs>641742016</BitOffs>
+            <BitOffs>641742400</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.eL2LSet</Name>
@@ -66305,7 +66317,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
     </Value>
               </Property>
             </Properties>
-            <BitOffs>641764288</BitOffs>
+            <BitOffs>641764672</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.eL2LGet</Name>
@@ -66320,7 +66332,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
     </Value>
               </Property>
             </Properties>
-            <BitOffs>641764304</BitOffs>
+            <BitOffs>641764688</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.bInit</Name>
@@ -66329,13 +66341,13 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
             <Default>
               <Bool>true</Bool>
             </Default>
-            <BitOffs>641764320</BitOffs>
+            <BitOffs>641764704</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.fbArbiterIO</Name>
             <BitSize>9408</BitSize>
             <BaseType Namespace="PMPS">FB_DummyArbIO</BaseType>
-            <BitOffs>641764352</BitOffs>
+            <BitOffs>641764736</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL.fbArbiter</Name>
@@ -66353,7 +66365,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>641774784</BitOffs>
+            <BitOffs>641775168</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL.fbFastFaultOutput1</Name>
@@ -66378,7 +66390,88 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642270528</BitOffs>
+            <BitOffs>642270912</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>TwinCAT_SystemInfoVarList._AppInfo</Name>
+            <BitSize>2048</BitSize>
+            <BaseType GUID="{941FDF6E-37CE-4C30-AA23-3236AFA461E2}">PlcAppSystemInfo</BaseType>
+            <Properties>
+              <Property>
+                <Name>no_init</Name>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>642796544</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>TwinCAT_SystemInfoVarList._TaskInfo</Name>
+            <BitSize>2048</BitSize>
+            <BaseType GUID="{56294066-FFF7-46F3-8206-FA06A30B13BA}">PlcTaskSystemInfo</BaseType>
+            <ArrayInfo>
+              <LBound>1</LBound>
+              <Elements>2</Elements>
+            </ArrayInfo>
+            <Properties>
+              <Property>
+                <Name>no_init</Name>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>642798592</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>TwinCAT_SystemInfoVarList._TaskPouOid_PlcTask</Name>
+            <BitSize>32</BitSize>
+            <BaseType GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</BaseType>
+            <Properties>
+              <Property>
+                <Name>no_init</Name>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>642800640</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>TwinCAT_SystemInfoVarList._TaskOid_PlcTask</Name>
+            <BitSize>32</BitSize>
+            <BaseType GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</BaseType>
+            <Properties>
+              <Property>
+                <Name>no_init</Name>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>642800672</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>TwinCAT_SystemInfoVarList.__PlcTask</Name>
+            <BitSize>896</BitSize>
+            <BaseType>_Implicit_Task_Info</BaseType>
+            <Default>
+              <SubItem>
+                <Name>.dwVersion</Name>
+                <Value>2</Value>
+              </SubItem>
+            </Default>
+            <Properties>
+              <Property>
+                <Name>TcContextName</Name>
+                <Value>PlcTask</Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>642800768</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.TcSystemEventClass</Name>
@@ -66450,7 +66543,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642812160</BitOffs>
+            <BitOffs>642819584</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.TcGeneralAdsEventClass</Name>
@@ -66522,7 +66615,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642812288</BitOffs>
+            <BitOffs>642819712</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.TcRouterEventClass</Name>
@@ -66594,7 +66687,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642812416</BitOffs>
+            <BitOffs>642819840</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.Win32EventClass</Name>
@@ -66666,7 +66759,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642812672</BitOffs>
+            <BitOffs>642820096</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.TcIPCDiagEventClass</Name>
@@ -66738,7 +66831,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642813312</BitOffs>
+            <BitOffs>642820224</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.TcIPCDiagPlcApiEventClass</Name>
@@ -66810,7 +66903,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642813440</BitOffs>
+            <BitOffs>642820352</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENTS.LCLSGeneralEventClass</Name>
@@ -66836,88 +66929,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642846208</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>TwinCAT_SystemInfoVarList._AppInfo</Name>
-            <BitSize>2048</BitSize>
-            <BaseType GUID="{941FDF6E-37CE-4C30-AA23-3236AFA461E2}">PlcAppSystemInfo</BaseType>
-            <Properties>
-              <Property>
-                <Name>no_init</Name>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>642864064</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>TwinCAT_SystemInfoVarList._TaskInfo</Name>
-            <BitSize>2048</BitSize>
-            <BaseType GUID="{56294066-FFF7-46F3-8206-FA06A30B13BA}">PlcTaskSystemInfo</BaseType>
-            <ArrayInfo>
-              <LBound>1</LBound>
-              <Elements>2</Elements>
-            </ArrayInfo>
-            <Properties>
-              <Property>
-                <Name>no_init</Name>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>642866112</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>TwinCAT_SystemInfoVarList._TaskPouOid_PlcTask</Name>
-            <BitSize>32</BitSize>
-            <BaseType GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</BaseType>
-            <Properties>
-              <Property>
-                <Name>no_init</Name>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>642868160</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>TwinCAT_SystemInfoVarList._TaskOid_PlcTask</Name>
-            <BitSize>32</BitSize>
-            <BaseType GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</BaseType>
-            <Properties>
-              <Property>
-                <Name>no_init</Name>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>642868192</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>TwinCAT_SystemInfoVarList.__PlcTask</Name>
-            <BitSize>896</BitSize>
-            <BaseType>_Implicit_Task_Info</BaseType>
-            <Default>
-              <SubItem>
-                <Name>.dwVersion</Name>
-                <Value>2</Value>
-              </SubItem>
-            </Default>
-            <Properties>
-              <Property>
-                <Name>TcContextName</Name>
-                <Value>PlcTask</Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>642868288</BitOffs>
+            <BitOffs>642857856</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -72049,7 +72061,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
             <Default>
               <SubItem>
                 <Name>.iMajor</Name>
-                <Value>4</Value>
+                <Value>0</Value>
               </SubItem>
               <SubItem>
                 <Name>.iMinor</Name>
@@ -72057,7 +72069,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
               </SubItem>
               <SubItem>
                 <Name>.iBuild</Name>
-                <Value>9</Value>
+                <Value>0</Value>
               </SubItem>
               <SubItem>
                 <Name>.iRevision</Name>
@@ -72065,11 +72077,11 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
               </SubItem>
               <SubItem>
                 <Name>.nFlags</Name>
-                <Value>1</Value>
+                <Value>0</Value>
               </SubItem>
               <SubItem>
                 <Name>.sVersion</Name>
-                <String>4.0.9</String>
+                <String>0.0.0</String>
               </SubItem>
             </Default>
             <Properties>
@@ -72819,7 +72831,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
             <Name>Main2.nCounter</Name>
             <BitSize>16</BitSize>
             <BaseType>UINT</BaseType>
-            <BitOffs>641764336</BitOffs>
+            <BitOffs>641764720</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.bLittleEndian</Name>
@@ -72834,7 +72846,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642794880</BitOffs>
+            <BitOffs>642795264</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.bSimulationMode</Name>
@@ -72849,7 +72861,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642794888</BitOffs>
+            <BitOffs>642795272</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.RuntimeVersion</Name>
@@ -72879,7 +72891,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642794896</BitOffs>
+            <BitOffs>642795280</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.CompilerVersion</Name>
@@ -72909,7 +72921,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642794960</BitOffs>
+            <BitOffs>642795344</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.nRegisterSize</Name>
@@ -72924,7 +72936,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642795024</BitOffs>
+            <BitOffs>642795408</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.nPackMode</Name>
@@ -72939,7 +72951,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642795040</BitOffs>
+            <BitOffs>642795424</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.bFPUSupport</Name>
@@ -72954,7 +72966,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642795056</BitOffs>
+            <BitOffs>642795440</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.bMulticoreSupport</Name>
@@ -72968,7 +72980,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642795064</BitOffs>
+            <BitOffs>642795448</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.RuntimeVersionNumeric</Name>
@@ -72983,7 +72995,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642795072</BitOffs>
+            <BitOffs>642795456</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.CompilerVersionNumeric</Name>
@@ -72998,7 +73010,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642795104</BitOffs>
+            <BitOffs>642795488</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_LicenseInfoVarList._LicenseInfo</Name>
@@ -73067,7 +73079,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642795136</BitOffs>
+            <BitOffs>642795520</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskPouOid_PlcTask2</Name>
@@ -73081,7 +73093,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642868224</BitOffs>
+            <BitOffs>642800704</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskOid_PlcTask2</Name>
@@ -73095,7 +73107,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642868256</BitOffs>
+            <BitOffs>642800736</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList.__PlcTask2</Name>
@@ -73116,7 +73128,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642869184</BitOffs>
+            <BitOffs>642801664</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -73176,7 +73188,7 @@ The BPTM will throw an error if the arbiter does not have enough space for the t
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2024-05-13T17:14:14</Value>
+          <Value>2024-09-19T13:50:34</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
